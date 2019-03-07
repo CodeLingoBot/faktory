@@ -100,6 +100,8 @@ func (worker *ClientData) IsQuiet() bool {
 /*
  * Send "quiet" or "terminate" to the given client
  * worker process.  Other signals are undefined.
+ */Send "quiet" or "terminate" to the given client
+ * worker process.  Other signals are undefined.
  */
 func (worker *ClientData) Signal(newstate WorkerState) {
 	if worker.state == Running {
